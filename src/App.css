@@ -1,7 +1,7 @@
 /* MIS ESTILOS */
 :root {
-  --main-color: blue;  
-  --second-color: black;
+  --main-color: black;  
+  --second-color: blue;
   --third-color: white;
   --main-bg: white;
   --second-bg: blue;
@@ -28,15 +28,17 @@ a:hover {
   color: Black;
 }
 
-p, label, input, .form-control { 
+p, label, input, .form-control, a { 
   font-size: 1rem;
+  color: var(--main-color);
   margin: 0;                         
   padding: 0;
   text-align: justify;
-  font-weight: 300;  
+  font-weight: 700;  
 }
 
 .divContainer {
   /* ver altura de Navbar y restarla */
-  min-height: calc(100vh - 11rem);
+  padding-top: 2rem;
+  min-height: calc(100vh - 60px);
 }
