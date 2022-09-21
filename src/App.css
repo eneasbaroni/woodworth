@@ -1,38 +1,42 @@
-.App {
-  text-align: center;
+/* MIS ESTILOS */
+:root {
+  --main-color: blue;  
+  --second-color: black;
+  --third-color: white;
+  --main-bg: white;
+  --second-bg: blue;
+  --main-boder: solid var(--main-color) 1px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+* {
+  list-style: none;   
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;  
+  margin: 0;
+  padding: 0;  
+  box-sizing: border-box;
+  color: var(--main-color);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a {
+  text-decoration: none;
+  color: var(--main-color);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+a:hover {
+  color: Black;
 }
 
-.App-link {
-  color: #61dafb;
+p, label, input, .form-control { 
+  font-size: 1rem;
+  margin: 0;                         
+  padding: 0;
+  text-align: justify;
+  font-weight: 300;  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.divContainer {
+  /* ver altura de Navbar y restarla */
+  min-height: calc(100vh - 11rem);
 }
