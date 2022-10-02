@@ -5,6 +5,7 @@
   box-shadow: 0px 1px 4px 0px #0000001A;
   height: auto; 
   background-color: white;
+  z-index: 90;
 }
 
 .navbarContainer {
@@ -29,6 +30,10 @@
   height: auto; 
 }
 
+/* .active {
+  color: #01ffdd !important;
+} */
+
 .langSelectors {
   display: flex;
   align-items: center;
@@ -39,6 +44,12 @@
 }
 
 .languageSelector {
+  font-size: 10px;
+  cursor: pointer;
+  padding: 0.1rem;
+}
+
+.langActive {
   font-size: 1rem;
   cursor: pointer;
 }

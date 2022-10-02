@@ -51,9 +51,9 @@ const Header = () => {
           </div>
 
           <div className="langSelectors">
-            <p className="languageSelector" onClick={() => handleLanguage("eng")}>EN</p>
-            <p className="languageSelector"> / </p>
-            <p className="languageSelector"onClick={() => handleLanguage("esp")}>ES</p>
+            <p className={`languageSelector ${language === 'eng' && 'langActive'}` } onClick={() => handleLanguage("eng")}>ENG</p>
+            {/* <p className="languageSelector"> / </p> */}
+            <p className={`languageSelector ${language === 'esp' && 'langActive'}` } onClick={() => handleLanguage("esp")}>ESP</p>
           </div>
 
         </div>              
@@ -70,9 +70,9 @@ const Header = () => {
             <img src='./images/burgerMenu.svg' alt="icon" height="10" className="navIcon" onClick={openNavbar}></img>                   
 
             <div className="langSelectorsMobile">
-              <p className="languageSelector" onClick={() => handleLanguage("eng")}>EN</p>
-              <p className="languageSelector"> / </p>
-              <p className="languageSelector"onClick={() => handleLanguage("esp")}>ES</p>
+              <p className={`languageSelector ${language === 'eng' && 'langActive'}` } onClick={() => handleLanguage("eng")}>ENG</p>
+              {/* <p className="languageSelector"> / </p> */}
+              <p className={`languageSelector ${language === 'esp' && 'langActive'}` } onClick={() => handleLanguage("esp")}>ESP</p>
             </div> 
 
           </div>

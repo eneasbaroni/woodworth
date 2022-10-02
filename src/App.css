@@ -1,10 +1,10 @@
 /* MIS ESTILOS */
 :root {
   --main-color: black;  
-  --second-color: #0D6EFD;
+  --second-color: #1F7CD3;
   --third-color: white;
   --main-bg: white;
-  --second-bg: blue;
+  --second-bg: #1F7CD3;
   --main-boder: solid var(--main-color) 1px;
 }
 
