@@ -1,15 +1,25 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 
 const ServiciosList = ({servicios}) => {
   const [servicioActivo, setServicioActivo] = useState(1)
 
-  const servicioActivoHandler = (e) => {
-    console.log(e.target.name);
+  const servicioActivoHandler = (e) => {    
     setServicioActivo(e.target.name)
-  }
+  }   
 
-
+  useEffect(() => {  
+    let servicio = parseInt(servicioActivo)    
+    const interval = setInterval(() => {      
+      if (servicio === servicios.length  ) {   
+        setServicioActivo(1)     
+      } else {     
+        setServicioActivo(servicio + 1)
+      }
+    }, 10000);
+    return () => clearInterval(interval)
+  // eslint-disable-next-line
+  }, [servicioActivo])
 
 
   return (
