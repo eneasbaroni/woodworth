@@ -3,6 +3,14 @@ import "./contacto.css"
 import { useContext } from "react"
 import LanguageContext from "../../context/languageContext"
 
+const background = {
+  backgroundImage: "url('/images/background.png')",
+  backgroundSize: "contain",
+  backgroundRepeat: "no-repeat",
+  backgroundPosition: "right",
+  backgroundPositionX: "48vw"
+}
+
 const Input = ({placeholder, name, label, foo}) => { 
   return (
     <>
@@ -40,7 +48,7 @@ const Contacto = () => {
   }
 
   return (
-    <div id="contacto" className="divContainer contactoContainer">
+    <div id="contacto" className="divContainer contactoContainer" style={background}>
       <div className="contactoTitle">
         {language === 'esp' 
           ? <h2>Contáctanos,<br/>estamos para<br/><span>ayudarte</span></h2>

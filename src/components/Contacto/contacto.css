@@ -1,9 +1,8 @@
 .contactoContainer {  
-  padding: 4rem 82px 0;
+  padding: 4rem 82px 84px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);   
-  gap: 1rem;
-  margin-bottom: 84px;
+  gap: 1rem;  
 }
 
 .contactoTitle {

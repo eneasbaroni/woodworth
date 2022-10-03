@@ -4,6 +4,7 @@ import Inicio from "../../components/Inicio/Inicio"
 import Nosotros from "../../components/Nosotros/Nosotros"
 import Pasos from "../../components/Pasos/Pasos"
 import Servicios from "../../components/Servicios/Servicios"
+import Valores from "../../components/Valores/Valores"
 
 
 const Home = () => {
@@ -12,6 +13,7 @@ const Home = () => {
       <Inicio/>
       <Servicios/>
       <Nosotros/>
+      <Valores/>
       <Beneficios/>
       <Pasos/>
       <Contacto/>
