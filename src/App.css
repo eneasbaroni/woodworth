@@ -37,8 +37,7 @@ p, label, input, .form-control, a {
   font-weight: 700;  
 }
 
-.divContainer {
-  /* ver altura de Navbar y restarla */
+.divContainer {  
   padding-top: 2rem;
   min-height: calc(100vh - 60px);
 }

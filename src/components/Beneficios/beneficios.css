@@ -66,8 +66,7 @@
   .moleculaContainer {
     grid-column: auto / span 1;
     width: 16rem;
-    max-height: 3.5rem;
-    /* height: auto;   */ 
+    max-height: 3.5rem;    
     margin: 1rem auto;
   }
 
