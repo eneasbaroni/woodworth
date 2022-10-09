@@ -69,8 +69,7 @@
     grid-column: auto / span 2;  
     margin: 2rem auto;  
   }
-
-  /* paso container 4 child */
+  
   .pasoContainer:nth-child(4) {
     grid-column: 2 / span 2;
   }
