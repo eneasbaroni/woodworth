@@ -26,18 +26,31 @@
 .serviciosListContainer {
   grid-column: 1 / span 12;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);  
+  grid-template-columns: repeat(4, 1fr);  
 }
 
 .serviciosImg {
-  grid-column: 1 / span 5;  
+  grid-column: 1 / span 4;  
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 3rem;
+}
+
+.servicioInfo{
+  width: 100%;
+  max-width: 180px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0.5rem auto;
 }
 
 .servicioImg {
   width: 100%;
+  max-width: 180px;
   height: auto;
   object-fit: contain;
   transition: all 0.2s ease-in-out;    
@@ -45,8 +58,16 @@
   filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
+.servicioInfo p{ 
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 1rem;
+}
+
 .servicioImgInactive {
   width: 100%;
+  max-width: 180px;
   height: auto;
   object-fit: contain;
   opacity: 0.5;
@@ -56,15 +77,16 @@
 
 .servicioDescription {
   margin-top: 2rem;
-  grid-column: 1 / span 5;   
+  grid-column: 1 / span 4;   
   text-align: center;
   font-size: 1rem;
   font-weight: 500;  
   text-align: center;
+  margin: 0.5rem 0; 
 }
 
 .beneficiosContainer {
-  grid-column: 1 / span 5;
+  grid-column: 1 / span 4;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -78,4 +100,109 @@
 .beneficiosContainer p { 
   font-size: 1rem;
   font-weight: 500;
+}
+
+/* resposive */
+@media screen and (max-width: 768px) {
+  .serviciosContainer {  
+    padding: 4rem 1rem 0;    
+  }
+
+  .serviciosContainer h2, .serviciosContainer h2 span {    
+    font-size: 1.75rem;
+    font-weight: 700;
+  }
+
+  .servicioInfo p{ 
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 576px) { 
+  .serviciosContainer {  
+    grid-auto-rows: auto !important;
+  }
+
+  .serviciosContainer h2, .serviciosContainer h2 span {    
+    font-size: 22px;
+    font-weight: 700;
+  }
+
+  .serviciosListContainer {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    width: 100%;  
+  }
+
+  .servicioCapsula {
+    grid-column: 1 / span 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+    margin: 1rem 0.5rem;
+    padding: 1rem;
+    border: 1px solid #1F7CD333;
+    border-radius: 4px;
+  }
+
+  .servicioCapsula div{       
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+  }
+  
+  .servicioCapsula .servicioImg{    
+    width: 30%;
+    /* max-width: 100px; */
+    height: auto;
+    max-width: none;
+  }
+  
+  .servicioCapsula div .capsulaTitle{    
+    text-align: center;
+    width: 50%;
+  }
+
+  .servicioCapsula div .servicioImgDown{    
+    width: 20%;
+    max-width: 16px;
+    height: auto;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .servicioCapsula div .servicioImgDownRotate{    
+    width: 10%;
+    max-width: 16px;
+    height: auto;
+    transform: rotate(180deg);
+    transition: all 0.5s ease-in-out;
+  }
+
+  .servicioDescriptionInactive { 
+    display: none !important;
+  }
+
+  .servicioDescriptionActive { 
+    transform: scale(1);
+    padding-top: 1rem;
+    font-size: 1rem;
+    font-weight: 400;     
+    transition: all 0.5s ease-in-out; 
+    display: flex;
+    flex-direction: column !important;
+  }
+
+  .servicioDescriptionActive p { 
+    font-size: 1rem;
+    font-weight: 400; 
+    margin: 0.5rem 0;    
+  }
+ 
 }

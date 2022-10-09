@@ -76,3 +76,30 @@
   }
   
 }
+
+/* resposive */
+@media screen and (max-width: 768px) {
+  .beneficiosPageContainer {  
+    padding: 4rem 1rem 0;   
+  } 
+
+  .beneficiosPageContainer p {
+    grid-column: 1 / span 12;     
+  }
+
+  .beneficiosPageContainer h2 {    
+    font-size: 1.75rem;    
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .beneficiosPageContainer h2 {    
+    font-size: 22px;    
+  }
+
+  .moleculaContainer {
+    grid-column: auto / span 2;  
+  }
+
+}
+

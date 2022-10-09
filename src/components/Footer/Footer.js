@@ -53,7 +53,7 @@ const Footer = () => {
             <p className="footerLink">Teléfono</p>     
             <p className="footerLink">Direccion</p>     
             <p className="footerLink">Correo electrónico</p> 
-            <div className="footerIconsContainer">"    
+            <div className="footerIconsContainer">    
               <a href="/" ><img src='/images/footer/facebook.png' alt='facebook'/></a>
               <a href="/" ><img src='/images/footer/instagram.png' alt='instagram'/></a>
             </div>
@@ -65,7 +65,7 @@ const Footer = () => {
             <p className="footerLink">Phone</p>     
             <p className="footerLink">Adress</p>     
             <p className="footerLink">Email</p> 
-            <div className="footerIconsContainer">"    
+            <div className="footerIconsContainer"> 
               <a href="/" ><img src='/images/footer/facebook.png' alt='facebook'/></a>
               <a href="/" ><img src='/images/footer/instagram.png' alt='instagram'/></a>
             </div>          

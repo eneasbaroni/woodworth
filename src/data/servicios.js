@@ -28,13 +28,13 @@ const servicios = {
       description: 'Posibilitamos el uso de equipo y/o bienes para que tu empresa pueda operar, a cambio de un precio de mercado justo presentado como una renta con su correspondiente interés.',
       beneficios: []
     },
-    {
+   /*  {
       id: 5,
       servicio: "Servicio 5", 
       image: 'serviciob.png',
       description: 'Posibilitamos el uso de equipo y/o bienes para que tu empresa pueda operar, a cambio de un precio de mercado justo presentado como una renta con su correspondiente interés.',
       beneficios: []
-    },
+    }, */
   ],
   eng : [
     {
@@ -65,13 +65,13 @@ const servicios = {
       description: 'Posibilitamos el uso de equipo y/o bienes para que tu empresa pueda operar, a cambio de un precio de mercado justo presentado como una renta con su correspondiente interés.',
       beneficios: []
     },
-    {
+    /* {
       id: 5,
       servicio: "Servicio 5", 
       image: 'serviciob.png',
       description: 'Posibilitamos el uso de equipo y/o bienes para que tu empresa pueda operar, a cambio de un precio de mercado justo presentado como una renta con su correspondiente interés.',
       beneficios: []
-    },
+    }, */
   ],
   
 }

@@ -50,22 +50,27 @@ const Contacto = () => {
   return (
     <div id="contacto" className="divContainer contactoContainer" style={background}>
       <div className="contactoTitle">
-        {language === 'esp' 
+        {/* {language === 'esp' 
           ? <h2>Contáctanos,<br/>estamos para<br/><span>ayudarte</span></h2>
           : <h2>Contact us,<br/>we are here to<br/><span>help you</span></h2>
+        }  */}       
+        {language === 'esp' 
+          ? <h2>Contáctanos, estamos para <span>ayudarte</span></h2>
+          : <h2>Contact us, we are here to <span>help you</span></h2>
         }        
         <img  src={`/images/contacto/contacto.png`} alt='contacto' />
       </div>
       <div className="contactoForm">
         <form className="formulario" onSubmit={sendData}>
           <legend>{language === 'esp' ? 'Déjanos tus datos y estaremos comunicandonos contigo.' : 'Leave us your contact information and we will be in touch with you.' }</legend>
+          <p className="campoObl">{language === 'esp' ? '(Los campos marcados con * son obligatorios)' : '(Fields marked with * are required)' }</p>
 
           {language === 'eng'
             ?
               <>
-                <Input placeholder="Applicant's name" name="nombre" label="Name" foo={handleInputChange}/>        
-                <Input placeholder="Company name" name="empresa" label="Company" foo={handleInputChange}/>
-                <Input placeholder="E-MAIL" name="email" label="Email" foo={handleInputChange}/> 
+                <Input placeholder="Applicant's name" name="nombre" label="Name*" foo={handleInputChange}/>        
+                <Input placeholder="Company name" name="empresa" label="Company*" foo={handleInputChange}/>
+                <Input placeholder="E-MAIL" name="email" label="Email*" foo={handleInputChange}/> 
                 <Input placeholder="Company website" name="url" label="Company URL" foo={handleInputChange}/>        
                 <Input placeholder="Questions, concerns, additional information, etc.l" name="observaciones" label="Comments" foo={handleInputChange}/> 
                 {nombreRegex.test(user.nombre) && emailRegex.test(user.email) && user.empresa
@@ -76,9 +81,9 @@ const Contacto = () => {
               </>
             :
               <>
-                <Input placeholder="Nombre del solicitante" name="nombre" label="Nombre" foo={handleInputChange}/>        
-                <Input placeholder="Nombre de la empresa" name="empresa" label="Empresa" foo={handleInputChange}/>
-                <Input placeholder="E-MAIL" name="email" label="Email" foo={handleInputChange}/> 
+                <Input placeholder="Nombre del solicitante" name="nombre" label="Nombre*" foo={handleInputChange}/>        
+                <Input placeholder="Nombre de la empresa" name="empresa" label="Empresa*" foo={handleInputChange}/>
+                <Input placeholder="E-MAIL" name="email" label="Email*" foo={handleInputChange}/> 
                 <Input placeholder="Pagina web de la empresa" name="url" label="URL de la empresa" foo={handleInputChange}/>        
                 <Input placeholder="Dudas, inquietudes, informacion adicional" name="observaciones" label="Observaciones" foo={handleInputChange}/>             
                 {nombreRegex.test(user.nombre) && emailRegex.test(user.email) && user.empresa

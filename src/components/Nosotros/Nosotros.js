@@ -1,10 +1,23 @@
 import "./nosotros.css"
-import { useContext } from "react"
+import { useContext, useEffect, useState } from "react"
 import LanguageContext from "../../context/languageContext"
+import MisionMobile from "./MisionMobile"
 
 
 const Nosotros = () => {
+  const [windowSize, setWindowSize] = useState(window.innerWidth) 
   const {language} = useContext (LanguageContext)
+  
+  //windows width
+  useEffect(() => {
+    const handleResize = () => {
+      let width = window.innerWidth      
+      setWindowSize(width)             
+    }
+    window.addEventListener("resize", handleResize);
+    handleResize();  
+    return () => window.removeEventListener("resize", handleResize);
+  }, [])   
 
   return (
     <div id="nosotros" className="divContainer">      
@@ -42,29 +55,33 @@ const Nosotros = () => {
 
       </div>
 
-      <div className="misionContainer">
-        <div className="mision">
-          <div className="misionText">
-            <h2>{language === 'esp' ? 'Misión' : 'Mision'}</h2>
-            <p>{language === 'esp'
-              ? 'Nuestro propósito es llegar a ser el escalón óptimo para financiar los proyectos de cualquier empresa a escala global. Tomamos como compromiso el análisis completo de los proyectos para asegurar la prosperidad de su desarrollo y, por ende, un emprendimiento evolutivo de la sociedad.'
-              : 'Our purpose is to become the optimal step to finance the projects of any company on a global scale. We take as a commitment the complete analysis of the projects to ensure the prosperity of their development and, therefore, an evolutionary entrepreneurship of society.'}
-            </p>
-          </div>        
-          <div className="misionImg"> <img src='/images/nosotros/mision.png' alt='mision'/></div>
-        </div> 
+      {windowSize > 576
+        ?
+          <div className="misionContainer">
+            <div className="mision">
+              <div className="misionText">
+                <h2>{language === 'esp' ? 'Misión' : 'Mision'}</h2>
+                <p>{language === 'esp'
+                  ? 'Nuestro propósito es llegar a ser el escalón óptimo para financiar los proyectos de cualquier empresa a escala global. Tomamos como compromiso el análisis completo de los proyectos para asegurar la prosperidad de su desarrollo y, por ende, un emprendimiento evolutivo de la sociedad.'
+                  : 'Our purpose is to become the optimal step to finance the projects of any company on a global scale. We take as a commitment the complete analysis of the projects to ensure the prosperity of their development and, therefore, an evolutionary entrepreneurship of society.'}
+                </p>
+              </div>        
+              <div className="misionImg"> <img src='/images/nosotros/mision.png' alt='mision'/></div>
+            </div> 
 
-        <div className="vision">
-          <div className="visionImg"> <img src='/images/nosotros/vision.png' alt='mision'/></div>
-          <div className="visionText">
-            <h2>{language === 'esp' ? 'Visión' : 'Vision'}</h2>
-            <p>{language === 'esp'
-              ?'Nuestro propósito es llegar a ser el escalón óptimo para financiar los proyectos de cualquier empresa a escala global. Tomamos como compromiso el análisis completo de los proyectos para asegurar la prosperidad de su desarrollo y por ende, un emprendimiento evolutivo de la sociedad.'
-              :'Our purpose is to become the optimal step to finance the projects of any company on a global scale. We take as a commitment the complete analysis of the projects to ensure the prosperity of their development and, therefore, an evolutionary entrepreneurship of society.'}
-            </p>
-          </div>        
-        </div> 
-      </div>
+            <div className="vision">
+              <div className="visionImg"> <img src='/images/nosotros/vision.png' alt='mision'/></div>
+              <div className="visionText">
+                <h2>{language === 'esp' ? 'Visión' : 'Vision'}</h2>
+                <p>{language === 'esp'
+                  ?'Nuestro propósito es llegar a ser el escalón óptimo para financiar los proyectos de cualquier empresa a escala global. Tomamos como compromiso el análisis completo de los proyectos para asegurar la prosperidad de su desarrollo y por ende, un emprendimiento evolutivo de la sociedad.'
+                  :'Our purpose is to become the optimal step to finance the projects of any company on a global scale. We take as a commitment the complete analysis of the projects to ensure the prosperity of their development and, therefore, an evolutionary entrepreneurship of society.'}
+                </p>
+              </div>        
+            </div> 
+          </div>
+        :<MisionMobile/>
+      }
       
     </div>
   )

@@ -79,9 +79,9 @@ const Header = () => {
 
           {navbarOpen &&
             <div className="navBarMobileOpen" style={{top: position, transition:"all 1s ease-in-out"}}>
-              <a href="#servicios"  className="navLink">{language === 'esp' ? 'Nuestros servicios' : 'Services'}</a>
-              <a href="#nosotros"  className="navLink">{language === 'esp' ? 'Sobre nosotros' : 'About'}</a>
-              <a href="#contacto"  className="navLink">{language === 'esp' ? 'Contáctanos' : 'Contact'}</a>
+              <a href="#servicios"  className="navLink" onClick={openNavbar}>{language === 'esp' ? 'Nuestros servicios' : 'Services'}</a>
+              <a href="#nosotros"  className="navLink" onClick={openNavbar}>{language === 'esp' ? 'Sobre nosotros' : 'About'}</a>
+              <a href="#contacto"  className="navLink" onClick={openNavbar}>{language === 'esp' ? 'Contáctanos' : 'Contact'}</a>
             </div>
           
           }

@@ -1,45 +1,28 @@
 import { useEffect, useState } from "react"
+import ServiciosListDesktop from "./ServiciosListDesktop"
+import ServiciosListMobile from "./ServiciosListMobile"
 
 
 const ServiciosList = ({servicios}) => {
-  const [servicioActivo, setServicioActivo] = useState(1)
 
-  const servicioActivoHandler = (e) => {    
-    setServicioActivo(e.target.name)
-  }   
+  //windows width
+  const [windowSize, setWindowSize] = useState(window.innerWidth) 
 
-  useEffect(() => {  
-    let servicio = parseInt(servicioActivo)    
-    const interval = setInterval(() => {      
-      if (servicio === servicios.length  ) {   
-        setServicioActivo(1)     
-      } else {     
-        setServicioActivo(servicio + 1)
-      }
-    }, 10000);
-    return () => clearInterval(interval)
-  // eslint-disable-next-line
-  }, [servicioActivo])
+  useEffect(() => {
+    const handleResize = () => {
+      let width = window.innerWidth      
+      setWindowSize(width)             
+    }
+    window.addEventListener("resize", handleResize);
+    handleResize();  
+    return () => window.removeEventListener("resize", handleResize);
+  }, [])   
 
 
   return (
-    <div className="serviciosListContainer">
-      <div className="serviciosImg">
-        {servicios.map((servicio) => ( // eslint-disable-next-line
-          servicioActivo == servicio.id 
-          ? <img src={`/images/servicios/${servicio.image}`} alt={servicio.servicio} key={servicio.id} name={servicio.id}  className='servicioImg' onClick={servicioActivoHandler}/>
-          :<img src={`/images/servicios/${servicio.image}`} alt={servicio.servicio} key={servicio.id} name={servicio.id}  className='servicioImgInactive' onClick={servicioActivoHandler}/>          
-        ))}
-      </div>    
-
-      <p className="servicioDescription">{servicios[servicioActivo-1].description}</p>
-      <div className="beneficiosContainer">
-        {servicios[servicioActivo-1].beneficios.map((el) => (
-          <p>{el}</p>
-        ))}
-      </div>
-
-    </div>
+    windowSize > 576
+    ?<ServiciosListDesktop servicios={servicios}/>    
+    :<ServiciosListMobile servicios={servicios}/>    
   )
 }
 

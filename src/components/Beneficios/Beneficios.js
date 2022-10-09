@@ -20,7 +20,7 @@ const Beneficios = () => {
   return (
     <div id="beneficios" className="divContainer beneficiosPageContainer">
       
-      <h2>{language === 'esp' ? 'Beneficios' : 'Profits'}</h2>
+      <h2>{language === 'esp' ? '¿Por qué elegirnos?' : 'Why choose us?'}</h2>
       <p>
         {language === 'esp' 
         ?'Nos dedicamos al ciclo completo del proyecto, es por ello, que en caso de que lo necesites, te ayudaremos desde el principio, colaborando con empresas que estén afín a las metas de tus proyectos y dándote el capital necesario para impulsar tus objetivos.'

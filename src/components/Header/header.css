@@ -100,3 +100,12 @@
 .navbarContainer .navBarMobileOpen .navLink {
   padding: 0.3rem 0;  
 }
+
+@media screen and (max-width: 768px) {
+  .headerContainer {    
+    padding: 0 1rem ;    
+  }
+}
+
+
+

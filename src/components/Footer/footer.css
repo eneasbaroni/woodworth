@@ -2,8 +2,7 @@ footer {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   padding: 1rem 82px;
-  background-color: #f4f9fe; 
-  
+  background-color: #f4f9fe;   
 }
 
 .logoContainer {
@@ -30,8 +29,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
-  
+  align-items: center;  
 }
 
 .footerLinksContainer h3 {
@@ -53,4 +51,32 @@ footer {
 .footerLinksContainer .footerIconsContainer img{
   height: 3rem; 
   padding: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  footer {    
+    grid-template-columns: repeat(3, 1fr);    
+    padding: 1rem 1rem;
+  }
+
+  .logoContainer {
+    grid-column: 1 / span 3;
+    width: 300px;
+    display: flex;    
+    justify-content: center;   
+    margin: 0 auto 1rem;   
+  }
+
+  .logoContainer p {
+    width: 100%;
+    text-align: center;
+  }
+  
+}
+
+@media screen and (max-width: 576px) {
+  .footerLinksContainer {
+    grid-column: auto / span 3;
+    margin-bottom: 1rem;    
+  }
 }

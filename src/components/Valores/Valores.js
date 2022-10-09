@@ -8,7 +8,7 @@ const Valores = () => {
   
   return (
     <div  id="valores" className="divContainer valoresContainer">
-      <h2>{language === 'esp' ? 'Valores corporativos' : 'Corporate values'}</h2>
+      <h2>{language === 'esp' ? 'Valores' : 'Values'}</h2>
       {language === 'esp'
         ?<img src="/images/valores/valores.png" alt="valores" />
         :<img src="/images/valores/valoresEng.png" alt="valores" />      

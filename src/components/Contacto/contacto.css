@@ -53,6 +53,14 @@
   margin-bottom: 2rem;
 }
 
+.formulario .campoObl {
+  grid-column: auto / span 1;
+  font-size: 12px;
+  font-weight: 300;
+  margin-bottom: 2rem;
+  color: black;
+}
+
 .formulario label {  
   padding: 0 0 0.5rem 0;
   font-size: 1rem;
@@ -90,4 +98,38 @@
   border: none;
   border-radius: 4px;
   color: white;
+}
+
+/* resposive */
+@media screen and (max-width: 768px) {
+  .contactoContainer {  
+    padding: 4rem 1rem;    
+  } 
+
+  .contactoTitle {
+    grid-column: 1 / span 12;    
+  }
+
+  .contactoTitle h2, .contactoTitle h2 span  {
+    font-size: 1.75rem;  
+  }
+
+  .contactoTitle img{
+    display: none;   
+  }
+
+  .contactoForm {
+    grid-column: 2 / span 10;     
+  }
+
+}
+
+@media screen and (max-width: 576px) {
+  .contactoTitle h2, .contactoTitle h2 span  {
+    font-size: 22px;  
+  }
+
+  .formulario {
+    padding: 36px 10px 26px;  
+  }
 }

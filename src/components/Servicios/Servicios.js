@@ -19,7 +19,7 @@ const Servicios = () => {
 
   return (
     <div id="servicios" className="divContainer serviciosContainer">
-      <h2>Conoce los servicios que <span>Woodworth</span> tiene para ti...</h2>
+      <h2>Soluciones que simplifican el<span> crecimiento financiero</span></h2>
       <ServiciosList servicios = {serviciosList}/>      
     </div>
   )
