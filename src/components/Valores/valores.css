@@ -35,6 +35,10 @@
 }
 
 @media screen and (max-width: 576px) {
+  .valoresContainer {   
+    padding: 4rem 82px 40px;    
+  }
+
   .valoresContainer h2 {    
     font-size: 22px;    
   }  

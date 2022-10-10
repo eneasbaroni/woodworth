@@ -1,7 +1,7 @@
 import { useContext, useEffect, useState } from "react"
 import LanguageContext from "../../context/languageContext"
 import "./inicio.css"
-const homeImg = "/images/home/background.png"
+const homeImg = "/images/home/background2.png"
 
 const Inicio = () => {
   const {language} = useContext (LanguageContext)
@@ -25,7 +25,7 @@ const Inicio = () => {
         <h1>{language === "esp" ? 'Simplificamos el' : "We're"}<br/><span>{language === "esp" ? 'crecieminto financiero' : "Connected"}</span></h1>
         <p>{language === "esp"
           ?"Tu aliado para potencializar el crecimiento de tu negocio"
-          :"We are an involved company that works with a network of companies in Mexico and the United States, allowing us to guarantee an effective and efficient operation."}
+          :"Your ally to enhance the growth of your business"}
         </p>
         {windowSize > 576 && <button>{language === 'esp' ? 'Contáctanos' : 'Contact us'}</button>}
       </div>

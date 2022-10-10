@@ -5,7 +5,7 @@
   grid-auto-rows: 1fr;
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: right;
+  background-position: 110% 50%;
 }
 
 .homeContainer div {
@@ -88,6 +88,9 @@
 @media screen and (max-width: 576px) { 
   .homeContainer {     
     grid-auto-rows: auto;    
+    background-position: 50% 50% !important;    
+    background-repeat: no-repeat;
+    background-size: 120%;
   }
 
   .homeContainer div {
@@ -104,7 +107,8 @@
   }
 
   .homeContainer p { 
-    font-size: 18px;    
+    font-size: 18px;  
+    margin-bottom: 2rem;  
   }
 
   .homeContainer button { 
