@@ -20,7 +20,8 @@
     font-size: 1rem;
     font-weight: 500;
     color: var(--main-color);
-    text-align: center;  
+    text-align: center; 
+    font-style: italic;
   }
   
   .sociosImagenesContainer {
