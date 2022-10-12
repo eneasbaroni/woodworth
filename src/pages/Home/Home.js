@@ -6,6 +6,7 @@ import Nosotros from "../../components/Nosotros/Nosotros"
 import Pasos from "../../components/Pasos/Pasos"
 import Servicios from "../../components/Servicios/Servicios"
 import Valores from "../../components/Valores/Valores"
+import Socios from "../../components/Socios/Socios"
 
 
 const Home = () => {
@@ -15,6 +16,7 @@ const Home = () => {
       <Servicios/>
       <Nosotros/>
       <Valores/>
+      <Socios/>
       <Beneficios/>
       <Clientes/>
       <Pasos/>
