@@ -26,7 +26,7 @@ const ServiciosListMobile = ({servicios}) => {
             <div className="servicioDescriptionActive">
               <p>{servicio.description}</p>               
               {servicio.beneficios.map((el) => (
-                <p>{el}</p>
+                <p className="servicioBeneficioP">{el}</p>
               ))}                 
             </div>                   
           </div>        
