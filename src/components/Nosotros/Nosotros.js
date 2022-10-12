@@ -28,12 +28,12 @@ const Nosotros = () => {
           ? 
             <p>        
               Nacimos en base a la necesidad y al reto que se enfrentó una empresa hermana al emprender un nuevo proyecto.<br/>
-              Al analizar el modelo de negocio, supimos que la mejor manera de llevar a cabo un proyecto es conseguir acceso a la financiación del crecimiento sin disolución, es decir hacer más con menos.
+              Al analizar el modelo de negocio, supimos que <span>la mejor manera de llevar a cabo un proyecto es conseguir acceso a la financiación del crecimiento sin disolución,</span> es decir hacer más con menos.
             </p>
           :
             <p>        
               We were born based on the need and the challenge that a sister company faced when undertaking a new project.<br/>
-              In analyzing the business model, we knew that the best way to carry out a project is to gain access to growth financing without dilution, that is, to do more with less.
+              In analyzing the business model, we knew that <span>the best way to carry out a project is to gain access to growth financing without dilution,</span> that is, to do more with less.
             </p>
         }
       </div>
@@ -43,13 +43,13 @@ const Nosotros = () => {
         {language === 'esp'
           ?
             <>
-            <p>Somos una empresa financiera mexicana con una visión y noción internacional dentro del funcionamiento empresarial moderno. Ofrecemos servicios financieros como: arrendamientos puros, créditos, financiamiento de flotilla automotriz y factoraje; para aquellas sociedades cuya meta es arrancar nuevos proyectos, y finalmente trascender dentro de su mercado.</p>
-            <p>Para alcanzar el nivel de trascendencia deseada, es necesario optimizar los recursos y capitales de manera personalizada, ya que sabemos que cada empresa tiene virtudes y escenarios diferentes dentro del mercado en el que operan. Por ello, trabajamos de manera concentrada en todos nuestros sectores para hallar el mejor modelo de capitalización para los nuevos proyectos de nuestros clientes.</p>
+            <p>Somos una <span>empresa financiera mexicana</span> con una visión y noción internacional dentro del funcionamiento empresarial moderno. Ofrecemos servicios financieros como: arrendamientos puros, créditos, financiamiento de flotilla automotriz y factoraje; para aquellas sociedades cuya meta es arrancar nuevos proyectos, y finalmente trascender dentro de su mercado.</p>
+            <p>Para alcanzar el nivel de trascendencia deseada, es necesario <span>optimizar los recursos y capitales de manera personalizada,</span> ya que sabemos que cada empresa tiene virtudes y escenarios diferentes dentro del mercado en el que operan. Por ello, trabajamos de manera concentrada en todos nuestros sectores para <span>hallar el mejor modelo de capitalización para los nuevos proyectos de nuestros clientes.</span></p>
             </>
           :
             <>
-            <p>We are a Mexican financial company with an international vision and notion of modern business operations. We offer financial services such as: pure leasing, loans, automotive fleet financing and factoring; for those companies whose goal is to start new projects, and finally transcend within their market.</p>
-            <p>To achieve the desired level of transcendence, it is necessary to optimize resources and capital in a personalized way, since we know that each company has different virtues and scenarios within the market in which they operate. Therefore, we work in a concentrated manner in all our sectors to find the best capitalization model for our clients' new projects.</p>
+            <p>We are a <span>Mexican financial company</span> with an international vision and notion of modern business operations. We offer financial services such as: pure leasing, loans, automotive fleet financing and factoring; for those companies whose goal is to start new projects, and finally transcend within their market.</p>
+            <p>To achieve the desired level of transcendence, it is necessary to <span>optimize resources and capital in a personalized way,</span> since we know that each company has different virtues and scenarios within the market in which they operate. Therefore, we work in a concentrated manner in all our sectors to <span>find the best capitalization model for our clients' new projects.</span></p>
             </>
         }
 

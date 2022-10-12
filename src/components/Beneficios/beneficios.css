@@ -1,7 +1,10 @@
 .beneficiosPageContainer {  
   padding: 4rem 82px 0;
   display: grid;
-  grid-template-columns: repeat(12, 1fr);   
+  grid-template-columns: repeat(12, 1fr);  
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-position: 110% 50%; 
 }
 
 .beneficiosPageContainer h2 {

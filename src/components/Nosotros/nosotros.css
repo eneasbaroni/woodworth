@@ -22,6 +22,15 @@
   text-align: left;  
 }
 
+.comienzoContainer p span {
+  grid-column: 2 / span 10;
+  margin-top: 2rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--main-color);
+  text-align: left;  
+}
+
 .nosotrosContainer, .misionContainer {  
   display: grid;
   grid-template-columns: repeat(12, 1fr); 
@@ -43,6 +52,15 @@
   margin-top: 2rem;
   font-size: 1rem;
   font-weight: 500;
+  color: var(--main-color);
+  text-align: left;  
+}
+
+.nosotrosContainer p span {
+  grid-column: 2 / span 10;
+  margin-top: 2rem;
+  font-size: 1rem;
+  font-weight: 700;
   color: var(--main-color);
   text-align: left;  
 }

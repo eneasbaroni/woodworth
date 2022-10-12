@@ -34,25 +34,24 @@ const Footer = () => {
       {language === 'esp'
         ?  
           <div className="footerLinksContainer">
-            <h3>Otros enlaces</h3>        
-            <a href="/"  className="footerLink">Términos y condiciones</a>
-            <a href="/"  className="footerLink">Política de privacidad</a>        
+            <h3>Contacto</h3>        
+            <p className="footerLink">Teléfono</p>     
+            <p className="footerLink">Direccion</p>     
+            <p className="footerLink">Correo electrónico</p>        
           </div>
         :
           <div className="footerLinksContainer">
-            <h3>Other links</h3>        
-            <a href="/"  className="footerLink">Terms and Conditions</a>
-            <a href="/"  className="footerLink">Privacy Policy</a>        
+            <h3>Contact</h3>   
+            <p className="footerLink">Phone</p>     
+            <p className="footerLink">Adress</p>     
+            <p className="footerLink">Email</p>        
           </div>
       }
 
       {language === 'esp'
         ?
           <div className="footerLinksContainer">
-            <h3>Contacto</h3>   
-            <p className="footerLink">Teléfono</p>     
-            <p className="footerLink">Direccion</p>     
-            <p className="footerLink">Correo electrónico</p> 
+            <h3>Redes</h3>  
             <div className="footerIconsContainer">    
               <a href="/" ><img src='/images/footer/facebook.png' alt='facebook'/></a>
               <a href="/" ><img src='/images/footer/instagram.png' alt='instagram'/></a>
@@ -61,10 +60,7 @@ const Footer = () => {
           </div>
         :
           <div className="footerLinksContainer">
-            <h3>Contact</h3>   
-            <p className="footerLink">Phone</p>     
-            <p className="footerLink">Adress</p>     
-            <p className="footerLink">Email</p> 
+            <h3>Socials</h3>              
             <div className="footerIconsContainer"> 
               <a href="/" ><img src='/images/footer/facebook.png' alt='facebook'/></a>
               <a href="/" ><img src='/images/footer/instagram.png' alt='instagram'/></a>

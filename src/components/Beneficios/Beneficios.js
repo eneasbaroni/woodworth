@@ -1,6 +1,7 @@
 import "./beneficios.css"
 import { useContext } from "react"
 import LanguageContext from "../../context/languageContext"
+const homeImg = "/images/home/background2.png"
 
 const Molecula = ({src, text}) => { 
 
@@ -18,7 +19,7 @@ const Beneficios = () => {
   const {language} = useContext (LanguageContext)
 
   return (
-    <div id="beneficios" className="divContainer beneficiosPageContainer">
+    <div id="beneficios" className="divContainer beneficiosPageContainer" style={{backgroundImage: `url(${homeImg})`}}>
       
       <h2>{language === 'esp' ? '¿Por qué elegirnos?' : 'Why choose us?'}</h2>
       <p>

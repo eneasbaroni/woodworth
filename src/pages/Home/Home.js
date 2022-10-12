@@ -1,4 +1,5 @@
 import Beneficios from "../../components/Beneficios/Beneficios"
+import Clientes from "../../components/Clientes/Clientes"
 import Contacto from "../../components/Contacto/Contacto"
 import Inicio from "../../components/Inicio/Inicio"
 import Nosotros from "../../components/Nosotros/Nosotros"
@@ -15,6 +16,7 @@ const Home = () => {
       <Nosotros/>
       <Valores/>
       <Beneficios/>
+      <Clientes/>
       <Pasos/>
       <Contacto/>
     </main>

@@ -46,11 +46,13 @@ footer {
 
 .footerLinksContainer .footerIconsContainer {
   height: auto; 
+  display: flex;
+  flex-direction: column;  
 }
 
 .footerLinksContainer .footerIconsContainer img{
   height: 3rem; 
-  padding: 0.5rem;
+  padding: 0.6rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -78,5 +80,8 @@ footer {
   .footerLinksContainer {
     grid-column: auto / span 3;
     margin-bottom: 1rem;    
+  }
+  .footerLinksContainer .footerIconsContainer {    
+    flex-direction: row;  
   }
 }
