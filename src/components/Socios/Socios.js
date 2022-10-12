@@ -7,7 +7,7 @@ const Socios = () => {
 
 
   return (
-    <div className="sociosContainer">
+    <div className="sociosContainer divContainer">
       <h2 className="titulo">{language === 'esp' ? 'Socios Fundadores' : 'Founding Partners'}</h2>
       <div className='sociosImagenesContainer'>
         <div className="sociosDiv">
