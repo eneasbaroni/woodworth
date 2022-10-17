@@ -1,11 +1,16 @@
 import "./success.css"
 import LanguageContext from "../../context/languageContext"
-import { useContext } from "react"
+import { useContext, useEffect, useLocation } from "react"
 import { Link } from "react-router-dom"
 const homeImg = "/images/home/background2.png"
 
 const Sucess = () => {
+  const { pathname } = useLocation();
   const {language} = useContext (LanguageContext)
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
 
   return (
