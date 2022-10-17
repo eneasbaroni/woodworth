@@ -2,6 +2,11 @@ import { useState } from "react"
 import "./contacto.css"
 import { useContext } from "react"
 import LanguageContext from "../../context/languageContext"
+import { send } from "emailjs-com"
+import { useNavigate } from "react-router-dom"
+
+/* import dotenv from "dotenv" */
+/* dotenv.config() */
 
 const background = {
   backgroundImage: "url('/images/background.png')",
@@ -21,6 +26,7 @@ const Input = ({placeholder, name, label, foo}) => {
 }
 
 const Contacto = () => {
+  let navigate = useNavigate();
   const {language} = useContext (LanguageContext)
 
   const [user, setUser] = useState({
@@ -40,12 +46,35 @@ const Contacto = () => {
       ...user,
       [event.target.name] : event.target.value
     })
-  }  
+  }
 
   const sendData = (e) => {
     e.preventDefault();  
     console.log(user);
+    
+    send(
+      //los keys de emailJS https://www.emailjs.com/
+      process.env.REACT_APP_JS_SERVICE_ID,
+      process.env.REACT_APP_JS_TEMPLATE_ID,
+      user,
+      process.env.REACT_APP_JS_USER_ID 
+    )
+     .then((response) => {
+
+      navigate("/success")  
+
+    })
+      .catch((err) => {
+      
+      console.log('FAILED...', err);
+    });
+  }      
+
+ /*  const sendData = (e) => {
+    e.preventDefault();  
+    console.log(user);
   }
+ */
 
   return (
     <div id="contacto" className="divContainer contactoContainer" style={background}>

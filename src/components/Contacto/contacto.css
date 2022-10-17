@@ -86,6 +86,7 @@
   border: none;
   border-radius: 4px;
   color: white;
+  cursor: pointer;
 }
 
 .formulario .enviarBtnDesabilitado {
@@ -131,4 +132,30 @@
   .formulario {
     padding: 36px 10px 26px;  
   }
+}
+
+
+/* swall */
+.swal2-popup {
+  border-radius: 0 !important;  
+  width: 80vw;
+  border-radius: 0;
+  border: var(--main-border) !important;
+  box-shadow: 7px 7px 0 0 var(--main-color) ;
+}
+
+.swal2-html-container {
+  font-size: 0.9rem ;
+  color: var(--main-color);
+  font-weight: 200 ;   
+}
+
+.swal2-styled.swal2-confirm {
+  background-color: var(--main-color);    
+  border-radius: 0;
+  font-weight: 200 ;    
+}
+
+.swal2-container.swal2-backdrop-show, .swal2-container.swal2-noanimation {
+  background-color: rgb(15, 15, 15) !important;
 }
