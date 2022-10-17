@@ -1,7 +1,7 @@
 import "./success.css"
 import LanguageContext from "../../context/languageContext"
-import { useContext, useEffect, useLocation } from "react"
-import { Link } from "react-router-dom"
+import { useContext, useEffect } from "react"
+import { Link, useLocation } from "react-router-dom"
 const homeImg = "/images/home/background2.png"
 
 const Sucess = () => {
