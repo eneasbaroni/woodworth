@@ -54,10 +54,10 @@ const Contacto = () => {
     
     send(
       //los keys de emailJS https://www.emailjs.com/
-      service_3unz234,
-      template_fv0gmcy,
+      'service_3unz234',
+      'template_fv0gmcy',
       user,
-      d8lAfDdXYE_oThvFm 
+      'd8lAfDdXYE_oThvFm' 
     )
      .then((response) => {
 
