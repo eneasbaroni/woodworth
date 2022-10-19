@@ -35,16 +35,16 @@ const Footer = () => {
         ?  
           <div className="footerLinksContainer">
             <h3>Contacto</h3>        
-            <p className="footerLink">Teléfono</p>     
+            <p className="footerLink">(+54)5586177612</p>     
             <p className="footerLink">Direccion</p>     
-            <p className="footerLink">Correo electrónico</p>        
+            <p className="footerLink"><a className='mailme' href="mailto:woodworthcapital@gmail.com?Subject=Contacto%20desde%20web">woodworthcapital@gmail.com</a></p>        
           </div>
         :
           <div className="footerLinksContainer">
             <h3>Contact</h3>   
-            <p className="footerLink">Phone</p>     
+            <p className="footerLink">(+54)5586177612</p>     
             <p className="footerLink">Adress</p>     
-            <p className="footerLink">Email</p>        
+            <p className="footerLink"><a className='mailme' href="mailto:woodworthcapital@gmail.com?Subject=Contacto%20desde%20web">woodworthcapital@gmail.com</a></p>        
           </div>
       }
 

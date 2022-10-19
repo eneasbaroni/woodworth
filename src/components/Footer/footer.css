@@ -44,6 +44,12 @@ footer {
   padding: 0.5rem 0; 
 }
 
+.footerLinksContainer .footerLink a{
+  font-size: 1rem;
+  font-weight: 400; 
+  padding: 0.5rem 0; 
+}
+
 .footerLinksContainer .footerIconsContainer {
   height: auto; 
   display: flex;
