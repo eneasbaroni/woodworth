@@ -39,5 +39,5 @@ p, label, input, .form-control, a {
 
 .divContainer {  
   padding-top: 2rem;
-  min-height: calc(100vh - 60px - 172px);
+  min-height: calc(100vh - 60px);
 }
