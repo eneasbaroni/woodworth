@@ -12,7 +12,7 @@ const Clientes = () => {
       <p>
         {language === 'esp' 
           ? 'Estamos dispuestos a aprender sobre el negocio y los objetivos de crecimiento de nuestros clientes. Nuestro objetivo siempre va a ser impulsar soluciones que ayuden a garantizar el acceso al capital de crecimiento. '
-          : "We are willing to learn about our clients' business and growth objectives. Our goal will always be to drive solutions that help secure access to growth capital. "
+          : "We are willing to learn about our client's business and growth objectives. Our goal will always be to drive solutions that help you secure access to capital growth."
         }
       </p>
       <div className='clientesCapsulasContainer'>

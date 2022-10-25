@@ -42,28 +42,28 @@ const servicios = {
       servicio: "Pure Leasing", 
       image: 'arrendamiento.png',
       description: 'We enable the use of equipment and/or assets for our clients to have a better operability without the need of having a dilution action.',      
-      beneficios: ['•Rental of productive assets without obsolescence', '•Customized schemes', '•Market prices with the corresponding interest', '•Performance and collateral']
+      beneficios: ['•Rental of productive assets without obsolescence', '•Personalized schemes ', '•Market prices with corresponding interest', '•Yield and real guarantees']
     },
     {
       id: 2,
-      servicio: "Factoring", 
+      servicio: "Finance Factoring", 
       image: 'factoraje.png',
-      description: "We pay our clients' accounts receivable, with the objective of speeding up the solvency of your business.",
+      description: "We pay our clients' accounts receivable, with the objective of speeding up the solvency of their business.",
       beneficios: ['•Immediate Liquidity', '•Affordable collections', '•Reduces administrative burden', '•Credit health']
     },
     {
       id: 3,
-      servicio: "Automobile Leasing", 
+      servicio: "Automotive Leasing", 
       image: 'automovil.png',
-      description: 'We finance all types of automobiles, allowing our clients to use this liability in exchange for the payment of a series of rents that can be converted into the purchase of the unit',
-      beneficios: ['•For individuals and companies', '•Reduces tax burden', '•Adaptation of deadlines to your needs', '•Payments less than those of a loan']
+      description: 'We finance all types of automobiles, allowing our clients to use this liability in exchange for the payment of a series of rents that can ultimately be converted into the purchase of the unit.',
+      beneficios: ['•For individuals and corporations', '•Reduces tax burden', '•Adaptation of terms to your needs', '•Lower payments than those of a credit']
     },
     {
       id: 4,
-      servicio: "Quick Credit", 
+      servicio: "Quick-short term lease", 
       image: 'credito.png',
-      description: 'We collaborate with our clients by providing them with amortized capital so that they can consolidate their liabilities and keep their finances healthy.',
-      beneficios: ['•Tailor-made financing', '•Flexible payment terms', '•Stimulates economic activity', '•Purchase of fixed assets']
+      description: 'We collaborate with our clients through amortized capital to help them consolidate their liabilities and keep their finances healthy.',
+      beneficios: ['•Tailor-made financing', '•Flexible payment terms', '•Stimulates economic activity', '•Purchase of Fixed Assets']
     },
     /* {
       id: 5,

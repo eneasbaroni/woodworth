@@ -22,7 +22,7 @@ const Socios = () => {
       <p className="parrafo">
         {language === 'esp' 
           ? '“Somo jóvenes emprendedores con una visión a largo plazo”'
-          : `"we are young entrepreneurs with a long-term vision"`
+          : `"We are young entrepreneurs with a long-term vision"`
         }
       </p>
 

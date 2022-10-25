@@ -27,7 +27,7 @@ const Footer = () => {
             <h3>Company</h3>        
             <a href="#servicios"  className="footerLink">Our Services</a>
             <a href="#nosotros"  className="footerLink">About Us</a>
-            <a href="#contacto"  className="footerLink">Contact us</a>
+            <a href="#contacto"  className="footerLink">Get in touch </a>
           </div>
       }
 
@@ -49,7 +49,7 @@ const Footer = () => {
       {language === 'esp'
         ?
           <div className="footerLinksContainer">
-            <h3>Redes</h3>  
+              
             <div className="footerIconsContainer">    
               <a href="/" ><img src='/images/footer/facebook.png' alt='facebook'/></a>
               <a href="/" ><img src='/images/footer/instagram.png' alt='instagram'/></a>
@@ -58,7 +58,7 @@ const Footer = () => {
           </div>
         :
           <div className="footerLinksContainer">
-            <h3>Socials</h3>              
+                          
             <div className="footerIconsContainer"> 
               <a href="/" ><img src='/images/footer/facebook.png' alt='facebook'/></a>
               <a href="/" ><img src='/images/footer/instagram.png' alt='instagram'/></a>
