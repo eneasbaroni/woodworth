@@ -8,7 +8,7 @@ const Socios = () => {
 
   return (
     <div className="sociosContainer divContainer">
-      <h2 className="titulo">{language === 'esp' ? 'Socios Fundadores' : 'Founding Partners'}</h2>
+      <h2 className="titulo">{language === 'esp' ? 'Socios Fundadores' : 'Founders'}</h2>
       <div className='sociosImagenesContainer'>
         <div className="sociosDiv">
           <img src="/images/socios/Diego.png" alt="logo" className="sociosImagen" />
@@ -21,7 +21,7 @@ const Socios = () => {
       </div>
       <p className="parrafo">
         {language === 'esp' 
-          ? '“Somo jóvenes emprendedores con una visión a largo plazo”'
+          ? '“Somos jóvenes emprendedores con una visión a largo plazo”'
           : `"We are young entrepreneurs with a long-term vision"`
         }
       </p>

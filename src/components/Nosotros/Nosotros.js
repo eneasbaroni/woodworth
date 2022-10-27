@@ -32,8 +32,8 @@ const Nosotros = () => {
             </p>
           :
             <p>        
-              We were born based on the need and the challenge faced by a sister company when undertaking a new project.<br/>
-              When analyzing the business model, we knew that  <span>the best way to carry out a project is to get access to growth financing without dissolution,</span> that is, to do more with less.
+              We were born due to the challenge faced by another start-up company when undertaking a new project.<br/>
+              When analyzing the business model, we knew that  <span>the best way to carry out a project is to get access to financial growth without dissolution,</span> that is, to do more with less.
             </p>
         }
       </div>
@@ -48,7 +48,7 @@ const Nosotros = () => {
             </>
           :
             <>
-            <p>We are a <span>Mexican financial company</span> with an international vision and notion of modern business operations. We offer financial services such as: pure leasing, loans, automotive fleet financing and factoring; for those companies whose goal is to start new projects, and finally transcend within their market.</p>
+            <p>We are a <span>Mexican company</span> with an international vision and notion of modern business operations. We offer financial services such as: pure leasing, loans, automotive fleet financing and factoring; for those companies whose goals are to start new projects, and finally transcend within their market.</p>
             <p>To reach the desired level of transcendence, it is necessary to <span>optimize resources and capital in a personalized way,</span> since we know that each company has different virtues and scenarios within the market in which they operate. Therefore, we work in a concentrated manner in all our sectors to <span>find the best capitalization model for our clients' new projects.</span></p>
             </>
         }
@@ -63,7 +63,7 @@ const Nosotros = () => {
                 <h2>{language === 'esp' ? 'Misión' : 'Mission'}</h2>
                 <p>{language === 'esp'
                   ? 'Nuestro propósito es llegar a ser el escalón óptimo para financiar los proyectos de cualquier empresa a escala global. Tomamos como compromiso el análisis completo de los proyectos para asegurar la prosperidad de su desarrollo y, por ende, un emprendimiento evolutivo de la sociedad.'
-                  : 'Our purpose is to become the optimal stepping stone to finance the projects of any company on a global scale. We are committed to the complete analysis of projects to ensure the prosperity of their development and, therefore, an evolutionary undertaking of society.'}
+                  : 'Our purpose is to become the optimal steppingstone to finance the projects of any company on a global scale. We are committed to the complete analysis of projects to ensure the prosperity of their development and, therefore, an evolutionary undertaking of society.'}
                 </p>
               </div>        
               <div className="misionImg"> <img src='/images/nosotros/mision.png' alt='mision'/></div>
@@ -75,7 +75,7 @@ const Nosotros = () => {
                 <h2>{language === 'esp' ? 'Visión' : 'Vision'}</h2>
                 <p>{language === 'esp'
                   ?'Adoptamos como necesidad la filosofía de crecer junto con nuestros clientes. Hacemos énfasis en empezar con el pie derecho para trascender en el sector financiero, ya que sabemos que la mejor manera de progresar es de manera colectiva. Queremos que toda empresa que cruce su camino con Woodworth Capital pueda impulsarse al siguiente nivel.'
-                  :'We adopt as a necessity the philosophy of growing together with our clients. We emphasize starting off on the right foot to transcend in the financial sector, because we know that the best way to progress is collectively. We want every company that crosses paths with Woodworth Capital to be able to propel itself to the next level. '}
+                  :'We adopt the philosophy of growing together with our clients. We emphasize starting off on the right foot to transcend in the financial sector, because we know that the best way to progress is collectively. We want every company that crosses paths with Woodworth Capital to be able to propel itself to the next level.'}
                 </p>
               </div>        
             </div> 

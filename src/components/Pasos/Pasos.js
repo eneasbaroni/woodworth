@@ -18,7 +18,7 @@ const Pasos = () => {
   return (
     <div id="pasos" className="divContainer pasosContainer">
       
-    <h2>{language === 'esp' ? 'Solicita nuestros servicios' : 'Request our services'} </h2>
+    <h2>{language === 'esp' ? 'Pasos para solicitar el servicio' : 'Steps to request our services'} </h2>
 
     {language === 'esp'
       ?
@@ -35,7 +35,7 @@ const Pasos = () => {
           <Paso src={"p02"} text={"We request the required documentation by mail"} />
           <Paso src={"p03"} text={"Send the required documentation according to the requested service"} />
           <Paso src={"p04"} text={"We will evaluate your request according to the information sent."} />
-          <Paso src={"p05"} text={"We create and sign the corresponding contract."} />      
+          <Paso src={"p05"} text={"We generate and sign the contract."} />      
         </div>  
     }
 

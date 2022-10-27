@@ -11,8 +11,8 @@ const Clientes = () => {
       <h2>{language === 'esp' ? 'Nuestros Clientes' : 'Our Clients'}</h2>
       <p>
         {language === 'esp' 
-          ? 'Estamos dispuestos a aprender sobre el negocio y los objetivos de crecimiento de nuestros clientes. Nuestro objetivo siempre va a ser impulsar soluciones que ayuden a garantizar el acceso al capital de crecimiento. '
-          : "We are willing to learn about our client's business and growth objectives. Our goal will always be to drive solutions that help you secure access to capital growth."
+          ? 'Estamos dispuestos a aprender sobre el negocio y los objetivos de crecimiento de nuestros clientes. Nuestro objetivo siempre va a ser impulsar soluciones que te ayuden a garantizar el acceso al capital de crecimiento.'
+          : "We are willing to learn about our client's business landmarks. Our goal will always be to drive solutions that help secure access to capital growth."
         }
       </p>
       <div className='clientesCapsulasContainer'>

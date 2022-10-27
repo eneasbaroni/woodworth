@@ -85,7 +85,7 @@ const Contacto = () => {
         }  */}       
         {language === 'esp' 
           ? <h2>Contáctanos, estamos para <span>ayudarte</span></h2>
-          : <h2>Contact us, we are here to <span>help you</span></h2>
+          : <h2>Get in touch, we are here to <span>help you</span></h2>
         }        
         <img  src={`/images/contacto/contacto.png`} alt='contacto' />
       </div>
@@ -101,7 +101,7 @@ const Contacto = () => {
                 <Input placeholder="Company name" name="empresa" label="Company*" foo={handleInputChange}/>
                 <Input placeholder="Petitioner's business mail " name="email" label="Mail*" foo={handleInputChange}/> 
                 <Input placeholder="Company website" name="url" label="Company URL" foo={handleInputChange}/>        
-                <Input placeholder="Doubts, concerns, additional information, etc.l" name="observaciones" label="Comments" foo={handleInputChange}/> 
+                <Input placeholder="Additional info" name="observaciones" label="Comments and Observations" foo={handleInputChange}/> 
                 {nombreRegex.test(user.nombre) && emailRegex.test(user.email) && user.empresa
                   ?<button className="col-2 enviarBtn" type="submit">Send</button>        
                   :<button className="col-2 enviarBtnDesabilitado" disabled type="submit">Send</button>

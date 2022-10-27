@@ -21,7 +21,7 @@ const Beneficios = () => {
   return (
     <div id="beneficios" className="divContainer beneficiosPageContainer" style={{backgroundImage: `url(${homeImg})`}}>
       
-      <h2>{language === 'esp' ? '¿Por qué elegirnos?' : 'Why choose us?'}</h2>
+      <h2>{language === 'esp' ? '¿Por qué elegirnos?' : 'Why us?'}</h2>
       <p>
         {language === 'esp' 
         ?'Nos dedicamos al ciclo completo del proyecto, es por ello, que en caso de que lo necesites, te ayudaremos desde el principio, colaborando con empresas que estén afín a las metas de tus proyectos y dándote el capital necesario para impulsar tus objetivos.'
@@ -31,11 +31,11 @@ const Beneficios = () => {
       <div className="moleculasBeneficioContainer">
 
         <Molecula src={"b01"} text={language === 'esp' ? "Entregas a tiempo" : 'On-time deliveries'} />
-        <Molecula src={"b02"} text={language === 'esp' ? "Red competitiva para impulsar compañías" : 'Competitive network to boost companies'} />
+        <Molecula src={"b02"} text={language === 'esp' ? "Red competitiva para impulsar compañías" : 'Competitive network to boost your company'} />
         <Molecula src={"b05"} text={language === 'esp' ? "Automatizaicion de credito rapido y facil" : 'Quick and easy credit automation '} />
         <Molecula src={"b06"} text={language === 'esp' ? "Flexibilidad en servicios" : 'Flexibility in services' } />
-        <Molecula src={"b03"} text={language === 'esp' ? "Procesos online y sin complicaciones" : 'Smooth online processes '} />
-        <Molecula src={"b04"} text={language === 'esp' ? "Cuidamos los flujos financieros de las empresas" : "We take care of your company's financial flows"} />
+        <Molecula src={"b03"} text={language === 'esp' ? "Procesos en línea y sin complicaciones" : 'Smooth online processes '} />
+        <Molecula src={"b04"} text={language === 'esp' ? "Cuidamos los flujos financieros de tu empresas" : "We take care of your company's financial flows"} />
 
       </div>
       

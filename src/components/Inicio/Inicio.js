@@ -25,7 +25,7 @@ const Inicio = () => {
         <h1>{language === "esp" ? 'Simplificamos el' : "Simplified"}<br/><span>{language === "esp" ? 'crecieminto financiero' : "financial growth"}</span></h1>
         <p>{language === "esp"
           ?"Tu aliado para potencializar el crecimiento de tu negocio"
-          :"The ally you need to boost your business growth"}
+          :"Your ally to enhance business growth"}
         </p>
         {windowSize > 576 && <button>{language === 'esp' ? 'Contáctanos' : 'Talk to us'}</button>}
       </div>
