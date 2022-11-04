@@ -22,7 +22,7 @@ const Inicio = () => {
   return (
     <div id="home" className="divContainer homeContainer" style={{backgroundImage: `url(${homeImg})`}}>
       <div>
-        <h1>{language === "esp" ? 'Simplificamos el' : "Simplified"}<br/><span>{language === "esp" ? 'crecieminto financiero' : "financial growth"}</span></h1>
+        <h1>{language === "esp" ? 'Simplificamos el' : "Simplified"}<br/><span>{language === "esp" ? 'crecimiento financiero' : "financial growth"}</span></h1>
         <p>{language === "esp"
           ?"Tu aliado para potencializar el crecimiento de tu negocio"
           :"Your ally to enhance business growth"}

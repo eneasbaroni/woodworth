@@ -21,13 +21,13 @@ const servicios = {
       description: 'Financiamos todo tipo de automóvil, permitiéndole a nuestros clientes usar este pasivo a cambio de realizar el pago de una serie de rentas que al final pueden convertirse en la compra de la unidad.',
       beneficios: ['•Para personas físicas y morales', '•Reduce carga fiscal', '•Adaptación de plazos a tus necesidades', '•Pagos menores a los de un crédito']
     },
-    {
+    /* {
       id: 4,
       servicio: "Crédito Rápido", 
       image: 'credito.png',
       description: 'Colaboramos con nuestros clientes mediante un capital amortizado para que logren consolidar sus pasivos y logren mantener sus finanzas sanas.',
       beneficios: ['•Financiamiento a tu medida', '•Flexibilidad en los plazos de pago', '•Estimula la actividad económica', '•Compra de Activo Fijo']
-    },
+    }, */
    /*  {
       id: 5,
       servicio: "Servicio 5", 
@@ -58,13 +58,13 @@ const servicios = {
       description: 'We finance all types of automobiles, allowing our clients to use automotive units in exchange for rent and the possibility to purchase the unit',
       beneficios: ['•For individuals and corporations', '•Reduces tax burden', '•Adaptation of terms to your needs', '•Lower payments']
     },
-    {
+    /* {
       id: 4,
       servicio: "Quick-short term lease", 
       image: 'credito.png',
       description: 'We collaborate with our clients through amortized capital to help them consolidate their goods and keep their finances healthy.',
       beneficios: ['•Tailor-made financing', '•Flexible payment terms', '•Stimulates economic activity', '•Purchase of Fixed Assets']
-    },
+    }, */
     /* {
       id: 5,
       servicio: "Servicio 5", 

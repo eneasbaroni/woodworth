@@ -26,7 +26,7 @@ const Pasos = () => {
           <Paso src={"p01"} text={"Envía el formulario de contacto indicando el servicio deseado"} />
           <Paso src={"p02"} text={"Te solicitamos la documentación requerida vía correo"} />
           <Paso src={"p03"} text={"Envía la documentación requerida según el servicio solicitado"} />
-          <Paso src={"p04"} text={"Evaluaremos tu solicitud según la informacion enviada"} />
+          <Paso src={"p04"} text={"Evaluaremos tu solicitud según la información enviada"} />
           <Paso src={"p05"} text={"Creamos y firmamos el contrato correspondiente"} />      
         </div>  
       :

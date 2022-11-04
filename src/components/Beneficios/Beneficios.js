@@ -32,10 +32,10 @@ const Beneficios = () => {
 
         <Molecula src={"b01"} text={language === 'esp' ? "Entregas a tiempo" : 'On-time deliveries'} />
         <Molecula src={"b02"} text={language === 'esp' ? "Red competitiva para impulsar compañías" : 'Competitive network to boost your company'} />
-        <Molecula src={"b05"} text={language === 'esp' ? "Automatizaicion de credito rapido y facil" : 'Quick and easy credit automation '} />
+        <Molecula src={"b05"} text={language === 'esp' ? "Automatización de crédito rápido y fácil" : 'Quick and easy credit automation '} />
         <Molecula src={"b06"} text={language === 'esp' ? "Flexibilidad en servicios" : 'Flexibility in services' } />
         <Molecula src={"b03"} text={language === 'esp' ? "Procesos en línea y sin complicaciones" : 'Smooth online processes '} />
-        <Molecula src={"b04"} text={language === 'esp' ? "Cuidamos los flujos financieros de tu empresas" : "We take care of your company's financial flows"} />
+        <Molecula src={"b04"} text={language === 'esp' ? "Cuidamos los flujos financieros de tu empresa" : "We take care of your company's financial flows"} />
 
       </div>
       

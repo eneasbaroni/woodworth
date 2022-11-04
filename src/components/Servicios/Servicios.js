@@ -19,7 +19,7 @@ const Servicios = () => {
 
   return (
     <div id="servicios" className="divContainer serviciosContainer">
-      <h2>{language === "esp" ? 'Soluciones que simplifican el' : "Simplified solutions for"}<br/><span>{language === "esp" ? 'crecieminto financiero' : "financial growth"}</span></h2>      
+      <h2>{language === "esp" ? 'Soluciones que simplifican el' : "Simplified solutions for"}<br/><span>{language === "esp" ? 'crecimiento financiero' : "financial growth"}</span></h2>      
       <ServiciosList servicios = {serviciosList}/>      
     </div>
   )

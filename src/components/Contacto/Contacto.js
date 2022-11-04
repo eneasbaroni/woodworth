@@ -91,7 +91,7 @@ const Contacto = () => {
       </div>
       <div className="contactoForm">
         <form className="formulario" onSubmit={sendData}>
-          <legend>{language === 'esp' ? 'Déjanos tus datos y estaremos comunicandonos contigo.' : 'Leave us your contact information and we will be in touch with you' }</legend>
+          <legend>{language === 'esp' ? 'Déjanos tus datos y estaremos comunicándonos contigo.' : 'Leave us your contact information and we will be in touch with you' }</legend>
           <p className="campoObl">{language === 'esp' ? '(Los campos marcados con * son obligatorios)' : '(Fields marked with * are required)' }</p>
 
           {language === 'eng'
