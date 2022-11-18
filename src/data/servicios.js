@@ -42,7 +42,7 @@ const servicios = {
       servicio: "Pure Leasing", 
       image: 'arrendamiento.png',
       description: 'We enable the use of equipment and/or assets for our clients to have a better operability without the need of having a dilution action.',      
-      beneficios: ['•Rental of productive assets without obsolescence', '•Personalized terms', '•●	Fair market prices with corresponding rates', '•Yield and real guarantees']
+      beneficios: ['•Rental of productive assets without obsolescence', '•Personalized terms', '•Fair market prices with corresponding rates', '•Yield and real guarantees']
     },
     {
       id: 2,
