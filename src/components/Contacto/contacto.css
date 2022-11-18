@@ -11,6 +11,11 @@
   flex-direction: column;
 }
 
+.contactoTitle img {
+  width: 100%;
+  height: auto;     
+}
+
 .contactoTitle h2 {
   font-size: 3.5rem;
   font-weight: 700;

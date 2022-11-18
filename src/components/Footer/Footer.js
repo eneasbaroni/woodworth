@@ -10,7 +10,7 @@ const Footer = () => {
     <footer id="footer">
 
       <div className="logoContainer">
-        <img src='/images/navBarLogo.png' alt='logo'/>
+      <a href="#home"><img src='/images/navBarLogo.png' alt='logo'/></a>
         <p>{language === 'esp' ? 'Todos los derechos reservados.' : 'All rights reserved.'}<br/>2022 - Woodworth Capital</p>
       </div>
 
